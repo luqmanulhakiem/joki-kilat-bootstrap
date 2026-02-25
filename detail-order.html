@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joki Kilat</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/dist/style.css">
+</head>
+
+<body>
+    <div class="">
+        <!-- Header -->
+        <div>
+            <header class="container-fluid sticky-top bg-white border-bottom py-3">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="col-md-3">
+                        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none fw-bold fs-4">
+                            Joki Kilat
+                        </a>
+                    </div>
+
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
+                        <li><a href="#" class="nav-link px-2 link-secondary">Pesan</a></li>
+                        <li><a href="#product" class="nav-link px-2 text-dark">Produk Kami</a></li>
+                        <li><a href="#testimoni" class="nav-link px-2 text-dark">Testimoni</a></li>
+                    </ul>
+
+                    <div class="col-md-3 text-end">
+                        <button class="btn d-md-none p-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileSidebar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="d-none d-md-block">
+                            <button type="button" class="btn btn-gradient-custom">
+                                Pesan Sekarang
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar"
+                aria-labelledby="mobileSidebarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="mobileSidebarLabel">Joki Kilat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link link-secondary py-2">Pesan</a></li>
+                        <li class="nav-item"><a href="#product" class="nav-link py-2">Produk Kami</a></li>
+                        <li class="nav-item"><a href="#testimoni" class="nav-link py-2">Testimoni</a></li>
+                    </ul>
+                    <hr>
+                    <button type="button" class="btn btn-primary w-100">Pesan Sekarang</button>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header -->
+
+        <!-- Hero Section -->
+        <div class="container-fluid hero-grid-gradient px-4 pt-5 text-center border-bottom">
+            <div class="container py-5">
+                <h1 class="display-4 fw-bold text-body-emphasis">
+                    Cek Dulu Yuk, Biar Gak Ada Salah Paham!
+                </h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">
+                        Isi detail pesananmu dengan lengkap ya. Kami ingin memastikan hasilnya nanti bikin kamu bilang
+                        "Wah, ini dia yang aku mau!"
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Hero Section -->
+
+        <!-- Form -->
+        <div class="container mb-5">
+            <form action="">
+                <div class="row">
+                    <!-- Form Proyek -->
+                    <div class="col-12 col-md-7 py-3 py-md-5">
+                        <div class="card card-gradient-1 p-4">
+                            <h6>Hampir Selesai! 🚀</h6>
+                            <p>Selangkah lagi menuju hasil maksimal! Semakin detail instruksi yang kamu berikan, semakin
+                                akurat dan cepat pula kami mewujudkannya. Yuk, lengkapi sekarang!</p>
+                            <div class="row g-3">
+                                <!-- Tipe Proyek -->
+                                <div class="col-sm-6">
+                                    <label for="tipeProyek" class="form-label">Tipe Proyek<span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" id="tipeProyek" required>
+                                        <option value="">Tipe Proyek</option>
+                                        <option>Aplikasi Sederhana</option>
+                                        <option>Website</option>
+                                        <option>Mobile</option>
+                                        <option>UI/UX Design</option>
+                                        <option>Lainnya</option>
+                                    </select>
+                                </div>
+                                <!-- End of Tipe Proyek -->
+
+                                <!-- Deadline -->
+                                <div class="col-sm-6">
+                                    <label for="deadline" class="form-label">Deadline</label>
+                                    <input type="date" class="form-control" id="deadline">
+                                    <div class="invalid-feedback">
+                                        Valid last name is required.
+                                    </div>
+                                </div>
+                                <!-- End of Deadline -->
+
+                                <!-- File Referensi -->
+                                <div class="col-sm-6">
+                                    <label for="fileReferensi" class="form-label">File Referensi</label>
+                                    <input type="file" id="fileReferensi" class="form-control">
+                                </div>
+                                <!-- End of File Referensi -->
+
+                                <!-- Catatan File Referensi -->
+                                <div class="col-sm-6">
+                                    <label for="catatanFileReferensi" class="form-label">Catatan</label>
+                                    <input type="text" class="form-control" id="catatanFileReferensi"
+                                        placeholder="Catatan Referensi" value="" />
+                                </div>
+                                <!-- End of Catatan File Referensi -->
+
+                                <!-- Budget -->
+                                <div class="col-sm-12">
+                                    <label for="budgetKamu" class="form-label">Kira Kira Budget Kamu Berapa?</label>
+                                    <input type="number" class="form-control" id="budgetKamu"
+                                        placeholder="Masukkan Budget (Opsional)" />
+                                </div>
+                                <!-- End of Budget -->
+
+                                <!-- Deskripsi Proyek -->
+                                <div class="col-sm-12">
+                                    <label for="deskripsiProyek" class="form-label">Deskripsi Proyek<span
+                                            class="text-danger">*</span></label>
+                                    <textarea class="form-control" id="deskripsiProyek" placeholder="Deskripsi Proyek"
+                                        rows="3" maxlength="500"></textarea>
+                                </div>
+                                <!-- End of Deskripsi Proyek -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Form Proyek -->
+
+                    <!-- Form Data Diri -->
+                    <div class="col-12 col-md-5 py-3 py-md-5">
+                        <div class="card card-gradient-2 p-4">
+                            <div class="row g-3">
+                                <!-- Nama Lengkap -->
+                                <div class="col-sm-12">
+                                    <label for="namaKamu" class="form-label">Nama Kamu<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" name="" id="namaKamu"
+                                        placeholder="Nama Kakak Cantik/Ganteng" required>
+                                </div>
+                                <!-- End of Nama Lengkap -->
+
+                                <!-- Kontak -->
+                                <div class="col-sm-12">
+                                    <label for="kontak" class="form-label">Kamu Mau Dihubungi Lewat Apa?<span
+                                            class="text-danger">*</span></label>
+                                    <div class="row mb-2">
+                                        <div class="btn-group">
+                                            <div class="btn btn btn-glass-gradient active" id="kontakEmail">Email</div>
+                                            <div class="btn btn btn-glass-gradient" id="kontakPhone">Phone</div>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" name="" id="kontakType" value="email">
+                                    <div class="d-block" id="email">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" name="email" id="kontak"
+                                                placeholder="Masukkan email kamu" autocomplete="off">
+                                        </div>
+                                    </div>
+                                    <div class="d-none" id="phoneInput">
+                                        <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">+62</span>
+                                            <input type="number" class="form-control" name="number"
+                                                placeholder="Masukkan No Hp : 8XXXYYYYZZZZ">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End of Kontak -->
+
+                                <!-- Where Did You Know -->
+                                <div class="col-sm-12">
+                                    <label for="whereDidYouKnow" class="form-label">Darimana kamu tahu Joki
+                                        Kilat?<span class="text-danger">*</span></label>
+                                    <select class="form-select" id="whereDidYouKnow" required>
+                                        <option value="">Pilih Jawaban</option>
+                                        <option>Mencari Lewat Instagram</option>
+                                        <option>Instagram (Akun Resmi Joki Proyek)</option>
+                                        <option>Instagram (Beranda/Explore)</option>
+                                        <option>Pelanggan Lama</option>
+                                        <option>Disarankan Teman</option>
+                                        <option>Pencarian di Search Engine (Google, Yahoo, dll)</option>
+                                        <option>Lainnya</option>
+                                    </select>
+                                </div>
+                                <!-- ketika pilih lainnya tampilkan text input -->
+                                <!-- End of Where Did You Know -->
+
+                                <!-- Referral -->
+                                <div class="col-sm-12">
+                                    <label for="kodeReferal" class="form-label">Kode Referal</label>
+                                    <input type="text" class="form-control" name="" id="kodeReferal"
+                                        placeholder="Kode Referal">
+                                </div>
+                                <!-- End of Referral -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End of Form Data Diri -->
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn btn-lg btn-gradient-custom">
+                        Pesan Sekarang
+                    </button>
+                </div>
+            </form>
+
+        </div>
+        <!-- End of Form -->
+
+        <!-- Footers -->
+        <div class="custom-footer-bg border-top">
+            <div class="container">
+                <footer class="pt-5 mt-5">
+                    <div class="row">
+                        <div class="col-6 col-md-4 mb-3">
+                            <h5>Menu</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pesan Sekarang</a></li>
+                                <li class="nav-item mb-2"><a href="#product" class="nav-link p-0">Produk Kami</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#testimoni" class="nav-link p-0">Testimoni</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 mb-3">
+                            <h5>Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="career.html" class="nav-link p-0">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+                        <p>&copy; 2026 Joki Kilat. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3">
+                                <a class="link-dark" href="#">
+                                    <svg class="bi" width="24" height="24">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- End Of Footers -->
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="./assets/dist/js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+    <script src="./assets/dist/script.js"></script>
+</body>
+
+</html>

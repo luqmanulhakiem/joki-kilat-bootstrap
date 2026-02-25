@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joki Kilat</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/dist/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./assets/dist/style.css">
+</head>
+
+<body>
+    <div class="">
+        <!-- Header -->
+        <div>
+            <header class="container-fluid sticky-top bg-white border-bottom py-3">
+                <div class="container d-flex align-items-center justify-content-between">
+                    <div class="col-md-3">
+                        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none fw-bold fs-4">
+                            Joki Kilat
+                        </a>
+                    </div>
+
+                    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 d-none d-md-flex">
+                        <li><a href="#" class="nav-link px-2 link-secondary">Pesan</a></li>
+                        <li><a href="#product" class="nav-link px-2 text-dark">Produk Kami</a></li>
+                        <li><a href="#testimoni" class="nav-link px-2 text-dark">Testimoni</a></li>
+                    </ul>
+
+                    <div class="col-md-3 text-end">
+                        <button class="btn d-md-none p-0" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#mobileSidebar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="d-none d-md-block">
+                            <a href="detail-order.html" class="btn btn-gradient-custom">
+                                Pesan Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileSidebar"
+                aria-labelledby="mobileSidebarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="mobileSidebarLabel">Joki Kilat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a href="#" class="nav-link link-secondary py-2">Pesan</a></li>
+                        <li class="nav-item"><a href="#product" class="nav-link py-2">Produk Kami</a></li>
+                        <li class="nav-item"><a href="#testimoni" class="nav-link py-2">Testimoni</a></li>
+                    </ul>
+                    <hr>
+                    <a href="detail-order.html" class="btn btn-gradient-custom form-control">
+                        Pesan Sekarang
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- End of Header -->
+
+        <!-- Hero Section -->
+        <div class="container-fluid hero-grid-gradient px-4 pt-5 text-center border-bottom">
+            <div class="container py-5 pb-0">
+                <h1 class="display-4 fw-bold text-body-emphasis">
+                    Proyek Beres, Kantong Gak Seret
+                </h1>
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4">
+                        Jasa pengerjaan Web, Mobile App, dan Tugas IT dengan harga paling masuk akal. Hasil rapi, kode
+                        bersih.
+                    </p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                        <button type="button" class="btn btn-gradient-custom btn-lg px-4 me-sm-3">
+                            Tanya Harga Proyekmu
+                        </button>
+                    </div>
+                </div>
+                <div class="overflow-hidden" style="max-height: 30vh">
+                    <div class="container px-5">
+                        <img src="./assets/images/bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4"
+                            alt="Example image" width="700" height="500" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Hero Section -->
+
+        <!-- Tech Stack -->
+        <div class="mt-0">
+            <div class="logo-slider">
+                <div class="logo-track">
+                    <div class="logo-item" title="HTML">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <path fill="#e44d26" d="M14.021 90.034 6 0h88.187l-8.022 89.985L50.02 100" />
+                            <path fill="#f16529" d="M50.093 92.344V7.39h36.048l-6.88 76.811" />
+                            <path fill="#ebebeb"
+                                d="M22.383 18.4h27.71v11.036H34.488L35.51 40.74h14.584v11.01H25.397zm3.5 38.893h11.084l.778 8.823 12.348 3.306v11.521l-22.654-6.32" />
+                            <path fill="#fff"
+                                d="M77.706 18.4H50.044v11.036h26.64zm-2.018 22.34H50.044v11.035h13.612l-1.288 14.341-12.324 3.306v11.473l22.606-6.271" />
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="CSS">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <path fill="#264de4" d="m94.175 0-8.033 89.99L50.034 100l-36.01-9.996L6 0z" />
+                            <path fill="#2965f1" d="m79.265 84.26 6.864-76.9H50.087v84.988z" />
+                            <path fill="#ebebeb"
+                                d="m24.396 40.74.99 11.039h24.702V40.74zm25.692-22.342h-27.68l1.003 11.038h26.676zm-.001 62.495V69.408l-.048.013-12.294-3.32-.786-8.803H25.878l1.547 17.332 22.612 6.277z" />
+                            <path fill="#fff"
+                                d="m63.642 51.779-1.281 14.316-12.312 3.323v11.484l22.63-6.272.166-1.865 2.594-29.06.27-2.965L77.7 18.398H50.05v11.038h15.555L64.599 40.74H50.05v11.04z" />
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Tailwind CSS">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="#06b6d4"
+                                    d="M50 20q-20 0-25 19.994 7.5-9.997 17.5-7.498c3.804.95 6.522 3.71 9.532 6.764 4.902 4.974 10.576 10.731 22.969 10.731q20 0 24.999-19.995-7.5 9.997-17.5 7.5c-3.803-.951-6.521-3.71-9.531-6.765C68.067 25.758 62.392 20 50 20M25 49.991q-20 0-25 19.995 7.5-9.998 17.5-7.498c3.803.952 6.522 3.71 9.532 6.763C31.933 74.225 37.608 79.984 50 79.984q20 0 25-19.995-7.5 9.997-17.5 7.498c-3.803-.95-6.522-3.71-9.532-6.763C43.066 55.75 37.393 49.991 25 49.991" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Figma">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="#0acf83"
+                                    d="M33.333 100C42.533 100 50 92.533 50 83.333V66.667H33.333c-9.2 0-16.666 7.466-16.666 16.666S24.133 100 33.333 100" />
+                                <path fill="#a259ff"
+                                    d="M16.667 50c0-9.2 7.466-16.667 16.666-16.667H50v33.334H33.333c-9.2 0-16.666-7.467-16.666-16.667" />
+                                <path fill="#f24e1e"
+                                    d="M16.667 16.667C16.667 7.467 24.133 0 33.333 0H50v33.333H33.333c-9.2 0-16.666-7.466-16.666-16.666" />
+                                <path fill="#ff7262"
+                                    d="M50 0h16.667c9.2 0 16.666 7.467 16.666 16.667s-7.466 16.666-16.666 16.666H50z" />
+                                <path fill="#1abcfe"
+                                    d="M83.333 50c0 9.2-7.466 16.667-16.666 16.667S50 59.2 50 50s7.467-16.667 16.667-16.667S83.333 40.8 83.333 50" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Node JS">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <path fill="#8cc84b"
+                                d="M46.279 1.067c2.479-1.42 5.709-1.426 8.186 0 12.464 7.042 24.931 14.074 37.393 21.12 2.343 1.321 3.911 3.93 3.887 6.63v42.371c.018 2.813-1.705 5.483-4.178 6.774-12.422 7.004-24.838 14.016-37.259 21.02-2.53 1.447-5.825 1.335-8.277-.23-3.724-2.16-7.455-4.308-11.18-6.465-.76-.453-1.619-.815-2.156-1.552.475-.64 1.324-.72 2.015-1 1.554-.495 2.982-1.288 4.41-2.058.361-.247.802-.153 1.148.069 3.185 1.826 6.342 3.705 9.537 5.513.682.394 1.372-.129 1.955-.453 12.19-6.89 24.396-13.754 36.584-20.646a1.21 1.21 0 0 0 .664-1.191c.009-13.977.002-27.957.005-41.934a1.31 1.31 0 0 0-.781-1.308C75.852 20.756 63.479 13.773 51.102 6.8a1.29 1.29 0 0 0-1.458-.002c-12.378 6.975-24.749 13.964-37.126 20.935-.506.23-.845.738-.785 1.302q.002 20.966 0 41.936a1.19 1.19 0 0 0 .673 1.176c3.303 1.873 6.61 3.733 9.916 5.6 1.861 1.002 4.148 1.597 6.199.83 1.81-.65 3.08-2.497 3.045-4.42.017-13.895-.009-27.793.013-41.686-.046-.617.54-1.127 1.14-1.069 1.586-.01 3.175-.021 4.762.005.663-.015 1.119.649 1.037 1.27-.007 13.984.017 27.968-.01 41.952.003 3.726-1.528 7.781-4.975 9.605-4.247 2.2-9.496 1.733-13.691-.376-3.632-1.813-7.098-3.952-10.666-5.894C6.697 76.68 4.983 73.999 5 71.189V28.817c-.026-2.756 1.604-5.412 4.021-6.713Q27.651 11.588 46.28 1.067" />
+                            <path fill="#8cc84b"
+                                d="M57.114 30.417c5.417-.348 11.216-.206 16.091 2.462 3.774 2.046 5.867 6.338 5.933 10.53-.105.566-.696.878-1.236.84-1.572-.003-3.144.02-4.716-.011-.667.025-1.054-.59-1.138-1.179-.451-2.006-1.545-3.993-3.434-4.96-2.898-1.452-6.26-1.38-9.42-1.349-2.308.123-4.79.322-6.744 1.68-1.5 1.027-1.957 3.102-1.421 4.773.505 1.2 1.89 1.587 3.023 1.944 6.529 1.708 13.447 1.538 19.85 3.785 2.651.916 5.245 2.697 6.152 5.472 1.187 3.72.667 8.168-1.98 11.154-2.146 2.458-5.273 3.796-8.39 4.522-4.149.925-8.454.949-12.666.538-3.962-.451-8.084-1.492-11.142-4.191-2.614-2.27-3.892-5.808-3.765-9.223.03-.576.605-.978 1.157-.93 1.583-.014 3.165-.018 4.748.001.632-.045 1.101.501 1.133 1.097.292 1.912 1.01 3.918 2.678 5.051 3.216 2.075 7.253 1.933 10.936 1.991 3.052-.135 6.477-.176 8.967-2.193 1.314-1.15 1.703-3.075 1.348-4.73-.384-1.398-1.847-2.05-3.103-2.476-6.444-2.038-13.44-1.299-19.822-3.604-2.59-.916-5.096-2.647-6.092-5.309-1.389-3.767-.752-8.427 2.172-11.313 2.852-2.87 6.968-3.976 10.881-4.372" />
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Bootstrap">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="#563d7c"
+                                    d="M0 87.106C0 94.228 5.773 100 12.894 100h74.212C94.228 100 100 94.227 100 87.106V12.895C100 5.772 94.227 0 87.106 0H12.895C5.773 0 0 5.773 0 12.894z" />
+                                <path fill="#fff"
+                                    d="M41.468 44.234V30.072h12.465q1.782 0 3.435.297 1.654.296 2.926 1.06a5.65 5.65 0 0 1 2.035 2.12q.762 1.356.763 3.476 0 3.816-2.29 5.513-2.289 1.696-5.85 1.696zM28.154 19.727v60.546h29.341q4.07 0 7.93-1.017 3.856-1.018 6.868-3.138 3.01-2.12 4.791-5.47 1.781-3.348 1.78-7.928 0-5.681-2.755-9.71-2.757-4.028-8.353-5.639 4.07-1.95 6.148-5.003t2.078-7.632q0-4.24-1.4-7.123-1.398-2.883-3.943-4.622-2.543-1.739-6.105-2.501-3.562-.764-7.887-.763zm13.314 50.2v-16.62h14.5q4.326 0 6.955 1.993t2.629 6.657q-.001 2.374-.806 3.9-.806 1.527-2.163 2.417-1.356.891-3.137 1.272-1.781.382-3.732.382z" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Python">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="url(#b)"
+                                    d="M49.64 0C24.254 0 25.839 11.009 25.839 11.009l.028 11.406h24.225v3.424H16.245S0 23.997 0 49.61c0 25.615 14.179 24.707 14.179 24.707h8.462V62.432s-.457-14.18 13.952-14.18H60.62s13.5.219 13.5-13.046V13.273S76.17 0 49.64 0M36.282 7.67a4.354 4.354 0 0 1 4.358 4.358 4.356 4.356 0 0 1-6.027 4.028 4.35 4.35 0 0 1-2.69-4.028 4.355 4.355 0 0 1 4.359-4.358" />
+                                <path fill="url(#c)"
+                                    d="M50.36 99.48c25.387 0 23.802-11.009 23.802-11.009l-.028-11.405H49.908V73.64h33.847S100 75.485 100 49.869c0-25.615-14.179-24.706-14.179-24.706H77.36v11.886s.457 14.179-13.952 14.179H39.379S25.88 51.009 25.88 64.274v21.933S23.83 99.48 50.36 99.48m13.359-7.67a4.355 4.355 0 0 1-4.028-6.026 4.35 4.35 0 0 1 4.028-2.69 4.355 4.355 0 0 1 4.027 6.027 4.355 4.355 0 0 1-4.027 2.69" />
+                            </g>
+                            <defs>
+                                <linearGradient id="b" x1="9.61" x2="59.167" y1="8.948" y2="58.01"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#387eb8" />
+                                    <stop offset="1" stop-color="#366994" />
+                                </linearGradient>
+                                <linearGradient id="c" x1="40.028" x2="93.246" y1="40.453" y2="90.762"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#ffe052" />
+                                    <stop offset="1" stop-color="#ffc331" />
+                                </linearGradient>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Go">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g fill="#00acd7" clip-path="url(#a)">
+                                <path
+                                    d="M7.547 42.312c-.195 0-.243-.097-.146-.243l1.022-1.315c.098-.146.341-.243.536-.243H26.34c.194 0 .243.146.146.292l-.828 1.266c-.097.146-.34.292-.487.292zm-7.352 4.48c-.195 0-.243-.098-.146-.244l1.022-1.314c.098-.146.341-.244.536-.244h22.202c.195 0 .292.146.243.292l-.39 1.169c-.048.195-.243.292-.437.292zm11.783 4.48c-.195 0-.244-.147-.146-.293l.681-1.217c.098-.146.292-.292.487-.292h9.738c.195 0 .292.146.292.34l-.098 1.169c0 .195-.194.34-.34.34zm50.538-9.836c-3.067.779-5.16 1.363-8.18 2.142-.73.195-.779.244-1.411-.487-.73-.827-1.266-1.363-2.289-1.85-3.067-1.51-6.037-1.07-8.812.73-3.311 2.143-5.015 5.308-4.967 9.251.05 3.895 2.727 7.109 6.573 7.645 3.311.438 6.086-.73 8.277-3.214.439-.535.828-1.12 1.315-1.801h-9.397c-1.022 0-1.266-.633-.925-1.461.633-1.51 1.801-4.041 2.483-5.307.146-.292.487-.78 1.217-.78h17.723c-.098 1.316-.098 2.63-.292 3.945-.536 3.505-1.85 6.719-3.993 9.543-3.505 4.625-8.082 7.498-13.876 8.277-4.771.632-9.202-.293-13.097-3.214-3.603-2.726-5.648-6.33-6.184-10.809-.632-5.307.926-10.078 4.139-14.265 3.457-4.528 8.034-7.401 13.633-8.423 4.576-.828 8.958-.293 12.902 2.385 2.58 1.704 4.43 4.041 5.648 6.865.292.439.097.682-.487.828" />
+                                <path
+                                    d="M78.632 68.36c-4.43-.097-8.472-1.362-11.88-4.284-2.872-2.483-4.674-5.648-5.258-9.397-.877-5.501.633-10.37 3.944-14.704 3.554-4.674 7.838-7.108 13.632-8.13 4.966-.877 9.64-.39 13.876 2.483 3.847 2.629 6.233 6.183 6.865 10.857.828 6.573-1.07 11.929-5.599 16.505-3.213 3.263-7.157 5.308-11.685 6.233-1.314.243-2.63.292-3.895.438M90.22 48.69c-.049-.632-.049-1.12-.146-1.606-.877-4.82-5.307-7.547-9.933-6.476-4.528 1.023-7.449 3.896-8.52 8.472-.876 3.798.974 7.644 4.48 9.202 2.677 1.169 5.355 1.023 7.936-.292 3.846-1.996 5.94-5.112 6.183-9.3" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="React">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="#61dafb"
+                                    d="M50.307 58.816a8.816 8.816 0 1 0 0-17.632 8.816 8.816 0 0 0 0 17.632" />
+                                <path stroke="#61dafb" stroke-width="5"
+                                    d="M50.307 68.063c26.126 0 47.306-8.087 47.306-18.063s-21.18-18.062-47.306-18.062C24.18 31.938 3 40.024 3 50s21.18 18.063 47.307 18.063Z" />
+                                <path stroke="#61dafb" stroke-width="5"
+                                    d="M34.664 59.031C47.727 81.658 65.321 95.957 73.96 90.97c8.64-4.988 5.053-27.374-8.01-50C52.885 18.342 35.291 4.043 26.652 9.03s-5.052 27.374 8.011 50Z" />
+                                <path stroke="#61dafb" stroke-width="5"
+                                    d="M34.664 40.969c-13.063 22.626-16.65 45.012-8.01 50 8.638 4.988 26.232-9.311 39.295-31.938s16.65-45.012 8.01-50c-8.638-4.988-26.232 9.311-39.295 31.938Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Flutter">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <path fill="#42a5f5" fill-opacity=".8"
+                                d="M25.399 65.395 10 49.996 60 0h30.794zm65.395-19.259H60L48.465 57.671l15.399 15.4" />
+                            <path fill="#0d47a1" d="M48.465 88.465 60 100h30.794l-26.93-26.93" />
+                            <path fill="#42a5f5" d="M33.103 73.078 48.477 57.7l15.375 15.375-15.375 15.379z" />
+                            <path fill="url(#a)" d="m48.477 88.453 15.375-15.375 2.146 2.146L50.623 90.6z" />
+                            <path fill="url(#b)" d="m48.465 88.465 22.848-7.894-7.449-7.505" />
+                            <defs>
+                                <linearGradient id="a" x1="56.167" x2="58.314" y1="80.763" y2="82.909"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".2" stop-opacity=".15" />
+                                    <stop offset=".85" stop-color="#616161" stop-opacity=".01" />
+                                </linearGradient>
+                                <linearGradient id="b" x1="48.471" x2="71.318" y1="80.766" y2="80.766"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".2" stop-opacity=".55" />
+                                    <stop offset=".85" stop-color="#616161" stop-opacity=".01" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Android">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <path fill="#3ddb85"
+                                d="M73.013 64.093a4.17 4.17 0 0 1-4.164-4.166 4.17 4.17 0 0 1 4.164-4.163 4.17 4.17 0 0 1 4.164 4.163 4.17 4.17 0 0 1-4.164 4.166m-46.026 0a4.17 4.17 0 0 1-4.163-4.166 4.17 4.17 0 0 1 4.163-4.163 4.17 4.17 0 0 1 4.164 4.163 4.17 4.17 0 0 1-4.164 4.166m47.52-25.083 8.321-14.414a1.733 1.733 0 0 0-.633-2.365 1.733 1.733 0 0 0-2.365.634L71.403 37.46C64.96 34.52 57.723 32.88 50 32.88s-14.96 1.639-21.403 4.58l-8.426-14.596a1.733 1.733 0 0 0-3.172.418c-.119.443-.057.915.173 1.313l8.322 14.414C11.204 46.782 1.43 61.249 0 78.34h100c-1.431-17.09-11.205-31.559-25.494-39.33" />
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Kotlin">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="url(#b)" d="M100 100H0V0h100L48.965 49.275z" />
+                            </g>
+                            <defs>
+                                <radialGradient id="b" cx="0" cy="0" r="1"
+                                    gradientTransform="translate(96.675 4.11)scale(114.549)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset=".003" stop-color="#ef4857" />
+                                    <stop offset=".469" stop-color="#d211ec" />
+                                    <stop offset="1" stop-color="#7f52ff" />
+                                </radialGradient>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Java">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="#5382a1"
+                                    d="M36.753 77.336s-3.822 2.222 2.72 2.974c7.924.904 11.973.774 20.706-.879 0 0 2.296 1.44 5.502 2.687-19.576 8.39-44.304-.486-28.928-4.782M34.36 66.387s-4.286 3.173 2.26 3.85c8.464.873 15.15.945 26.717-1.283 0 0 1.6 1.622 4.115 2.51-23.668 6.92-50.03.545-33.092-5.077" />
+                                <path fill="#e76f00"
+                                    d="M54.527 47.815c4.823 5.554-1.267 10.551-1.267 10.551s12.247-6.322 6.622-14.24C54.63 36.743 50.6 33.074 72.41 20.425c0 0-34.234 8.55-17.883 27.39" />
+                                <path fill="#5382a1"
+                                    d="M80.418 85.434s2.827 2.33-3.115 4.133c-11.3 3.423-47.03 4.456-56.956.136-3.568-1.552 3.124-3.706 5.228-4.159 2.195-.475 3.45-.387 3.45-.387-3.968-2.795-25.648 5.49-11.012 7.861 39.913 6.473 72.757-2.914 62.405-7.584M38.59 55.044s-18.174 4.317-6.436 5.884c4.956.664 14.837.514 24.04-.258 7.522-.634 15.075-1.983 15.075-1.983s-2.653 1.136-4.571 2.446c-18.457 4.854-54.11 2.596-43.846-2.37 8.68-4.195 15.738-3.72 15.738-3.72m32.603 18.224c18.762-9.75 10.088-19.118 4.033-17.856-1.484.309-2.146.576-2.146.576s.551-.863 1.603-1.236c11.978-4.212 21.19 12.42-3.867 19.007 0 0 .29-.26.377-.491" />
+                                <path fill="#e76f00"
+                                    d="M59.882 0s10.39 10.395-9.855 26.377C33.793 39.2 46.325 46.51 50.02 54.861c-9.476-8.55-16.43-16.077-11.765-23.082C45.103 21.496 64.075 16.51 59.882 0" />
+                                <path fill="#5382a1"
+                                    d="M40.434 99.686c18.009 1.153 45.663-.64 46.318-9.161 0 0-1.26 3.23-14.883 5.796-15.371 2.892-34.329 2.555-45.573.7 0 0 2.302 1.906 14.138 2.665" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Swift">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="url(#b)"
+                                    d="M22.218 0h55.369c2.694 0 5.31.43 7.848 1.328a22.06 22.06 0 0 1 9.489 6.719 21.9 21.9 0 0 1 4.803 10.703c.234 1.445.273 2.89.273 4.336v54.023c0 1.72-.078 3.477-.43 5.157a22.1 22.1 0 0 1-5.27 10.43c-2.617 2.929-6.053 5.117-9.763 6.288-2.264.704-4.607 1.016-6.99 1.016-1.053 0-55.485 0-56.305-.04a22.3 22.3 0 0 1-11.246-3.71 22.6 22.6 0 0 1-7.614-8.75C.898 84.492.156 81.133.156 77.773V22.227a20.74 20.74 0 0 1 2.07-9.57C3.905 9.14 6.52 6.054 9.762 3.866 13.08 1.602 16.986.273 20.968.078c.39-.078.82-.078 1.25-.078" />
+                                <path fill="url(#c)"
+                                    d="M84.342 81.797a15 15 0 0 0-1.171-1.602 16.6 16.6 0 0 0-3.359-3.047c-1.561-1.054-3.397-1.718-5.27-1.796-1.329-.079-2.656.156-3.906.625-1.25.43-2.46 1.054-3.631 1.68-1.367.702-2.733 1.406-4.178 1.991a31.4 31.4 0 0 1-5.35 1.641c-2.303.43-4.646.586-6.95.547a47 47 0 0 1-12.339-1.875 46.7 46.7 0 0 1-10.035-4.336 52 52 0 0 1-7.77-5.508 57 57 0 0 1-5.545-5.508 60 60 0 0 1-3.358-4.296c-.43-.586-.82-1.211-1.171-1.836L0 47.344V22.148C0 9.922 9.879 0 22.1 0h19.72l14.603 14.844C89.38 37.266 78.72 61.992 78.72 61.992s9.372 10.547 5.623 19.805" />
+                                <path fill="#fff"
+                                    d="M56.501 14.844c32.956 22.422 22.296 47.148 22.296 47.148s9.372 10.586 5.584 19.844c0 0-3.866-6.484-10.347-6.484-6.248 0-9.919 6.484-22.492 6.484-27.996 0-41.233-23.398-41.233-23.398 25.224 16.601 42.444 4.843 42.444 4.843C41.39 56.68 17.22 25.117 17.22 25.117c21.046 17.93 30.144 22.656 30.144 22.656-5.427-4.492-20.656-26.445-20.656-26.445C38.891 33.672 63.1 50.898 63.1 50.898c6.873-19.062-6.599-36.054-6.599-36.054" />
+                            </g>
+                            <defs>
+                                <linearGradient id="b" x1="59.465" x2="40.565" y1="-3.568" y2="103.578"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#faae42" />
+                                    <stop offset="1" stop-color="#ef3e31" />
+                                </linearGradient>
+                                <linearGradient id="c" x1="51" x2="37.167" y1="1.616" y2="80.034"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#e39f3a" />
+                                    <stop offset="1" stop-color="#d33929" />
+                                </linearGradient>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="VS Code">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g clip-path="url(#a)">
+                                <path fill="#2489ca"
+                                    d="M.951 35.498s-2.435-1.756.488-4.1l6.81-6.089s1.948-2.05 4.008-.264l62.839 47.576v22.814s-.03 3.582-4.628 3.186z" />
+                                <path fill="#1070b3"
+                                    d="M17.148 50.204.951 64.929s-1.664 1.238 0 3.45l7.52 6.84s1.787 1.919 4.425-.263l17.171-13.02z" />
+                                <path fill="#0877b9"
+                                    d="M45.584 50.325 75.29 27.643l-.193-22.692S73.827 0 69.596 2.577L30.067 38.553z" />
+                                <path fill="#3c99d4"
+                                    d="M70.469 98.652c1.725 1.766 3.815 1.188 3.815 1.188l23.149-11.407c2.963-2.02 2.547-4.526 2.547-4.526V15.79c0-2.994-3.065-4.029-3.065-4.029L76.852 2.09c-4.384-2.71-7.256.487-7.256.487s3.694-2.659 5.5 2.375v90.067c0 .62-.132 1.228-.396 1.776-.527 1.066-1.674 2.06-4.424 1.644z" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="logo-item" title="Wordpress">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 100 100">
+                            <g fill="#00749a" clip-path="url(#a)">
+                                <path
+                                    d="M7.107 49.999c0 16.979 9.867 31.65 24.175 38.604L10.82 32.543a42.7 42.7 0 0 0-3.714 17.456m71.85-2.165c0-5.3-1.904-8.972-3.537-11.83-2.175-3.532-4.212-6.524-4.212-10.058 0-3.943 2.99-7.613 7.202-7.613.19 0 .37.024.557.034-7.632-6.991-17.8-11.26-28.966-11.26-14.985 0-28.169 7.689-35.839 19.334 1.007.03 1.956.05 2.76.05 4.487 0 11.432-.544 11.432-.544 2.312-.136 2.585 3.26.276 3.533 0 0-2.325.274-4.91.41l15.62 46.46 9.387-28.152-6.683-18.31c-2.31-.135-4.498-.409-4.498-.409-2.312-.135-2.04-3.669.27-3.533 0 0 7.084.545 11.299.545 4.486 0 11.431-.545 11.431-.545 2.314-.136 2.586 3.26.275 3.534 0 0-2.328.273-4.909.408l15.5 46.11L75.69 61.7c1.856-5.932 3.267-10.194 3.267-13.866" />
+                                <path
+                                    d="m50.753 53.75-12.87 37.396a42.9 42.9 0 0 0 12.118 1.748 42.9 42.9 0 0 0 14.243-2.43 3.6 3.6 0 0 1-.305-.592zm36.885-24.33c.184 1.366.288 2.834.288 4.41 0 4.353-.812 9.246-3.261 15.364L71.563 87.075C84.315 79.64 92.893 65.824 92.893 50a42.66 42.66 0 0 0-5.255-20.58" />
+                                <path
+                                    d="M50 0C22.43 0 0 22.43 0 49.999 0 77.57 22.43 100 50 100s50.003-22.429 50.003-50.002C100.003 22.429 77.569 0 50.001 0m0 97.708c-26.305 0-47.707-21.402-47.707-47.71C2.293 23.695 23.694 2.294 50 2.294c26.304 0 47.705 21.401 47.705 47.706 0 26.307-21.402 47.71-47.705 47.71" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M0 0h100v100H0z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Tech Stack -->
+
+        <!-- Product -->
+        <div class="container py-5">
+            <div class="row mt-5 align-items-center mb-4">
+                <div class="col-12 col-md-8">
+                    <h2 class="fw-bold display-6" id="product">Butuh Aplikasi Siap Pakai?</h2>
+                    <p class="text-muted">Pilih koleksi aplikasi Web & Mobile kami yang sudah jadi, lengkap dengan
+                        dokumentasi, dan harga tetap bersahabat!</p>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-md-end align-items-center">
+                    <a href="produk.html" class="btn btn-outline-gradient px-4">Explore Galeri Produk</a>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="product-card card-gradient-1 shadow-sm h-100">
+                        <div class="card-content p-4 p-md-5 d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <div class="badge bg-primary mb-3 rounded-pill px-3">Web App</div>
+                                <div class="badge bg-primary mb-3 rounded-pill px-3">Mobile App</div>
+                                <h3 class="fw-bold display-6 mb-2">Aplikasi Absensi</h3>
+                                <p class="opacity-75 mb-3">Sistem aplikasi absensi dengan mencatat lokasi pengguna</p>
+
+                                <div class="tech-stack mb-4">
+                                    <span class="badge border text-dark fw-normal rounded-pill">Laravel</span>
+                                    <span class="badge border text-dark fw-normal rounded-pill">Flutter</span>
+                                    <span class="badge border text-dark fw-normal rounded-pill">MySQL</span>
+                                </div>
+
+                                <div class="price-tag mb-4">
+                                    <span class="text-decoration-line-through text-muted small">Rp 1.800.000</span>
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="fw-bold mb-0">Rp 1.200.000</h4>
+                                        <span class="badge bg-danger ms-2 small">-33%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-dark rounded-pill px-4 py-2 mt-auto w-fit">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-card card-gradient-2 shadow-sm h-100">
+                        <div class="card-content p-4 p-md-5 d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <div class="badge bg-primary mb-3 rounded-pill px-3">Tambah Fitur</div>
+                                <h3 class="fw-bold display-6 mb-2">Filter Data</h3>
+                                <p class="opacity-75 mb-3">Penambahan fitur filter pada data apapun.</p>
+
+                                <div class="tech-stack mb-4">
+                                    <span class="badge border text-dark fw-normal rounded-pill">Php</span>
+                                    <span class="badge border text-dark fw-normal rounded-pill">Laravel</span>
+                                </div>
+
+                                <div class="price-tag mb-4">
+                                    <span class="text-decoration-line-through text-muted small">Rp 300.000</span>
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="fw-bold mb-0">Rp 100.000</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-dark rounded-pill px-4 py-2 mt-auto w-fit">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="product-card card-gradient-1 shadow-sm h-100">
+                        <div class="card-content p-4 p-md-5 d-flex flex-column justify-content-between h-100">
+                            <div>
+                                <div class="badge bg-info mb-3 rounded-pill px-3 text-dark">Aplikasi Sederhana</div>
+                                <h3 class="fw-bold display-6 mb-2">Kalkulator CLI</h3>
+                                <p class="opacity-75 mb-3">Aplikasi Sederhana Kalkulator berbasis CLI untuk menghitung,
+                                    mengurangi, membagi, menkalikan angka</p>
+
+                                <div class="tech-stack mb-4">
+                                    <span class="badge border text-dark fw-normal rounded-pill">C</span>
+                                    <span class="badge border text-dark fw-normal rounded-pill">Python</span>
+                                    <span class="badge border text-dark fw-normal rounded-pill">GO</span>
+                                </div>
+
+                                <div class="price-tag mb-4">
+                                    <span class="text-decoration-line-through text-muted small">Rp 150.000</span>
+                                    <div class="d-flex align-items-center">
+                                        <h4 class="fw-bold mb-0">Rp 50.000</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-dark rounded-pill px-4 py-2 mt-auto w-fit">Pesan Sekarang</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Of Product -->
+
+        <!-- Testimoni -->
+        <div class="testimonial-section">
+            <div class="container">
+                <div class="row align-items-center mb-5">
+                    <div class="col-md-7">
+                        <h2 class="fw-bold display-5" id="testimoni">Apa Kata Mereka?</h2>
+                    </div>
+                    <div class="col-md-5">
+                        <p class="text-muted">Lebih dari 500+ proyek telah kami selesaikan dengan rating sempurna.
+                            Jangan cuma percaya kata kami, biarkan hasil kerja yang bicara.</p>
+                    </div>
+                </div>
+
+                <div id="testiCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6 px-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-header">
+                                            <div>
+                                                <div class="testimonial-name">Rian</div>
+                                                <div class="stars">★★★★★</div>
+                                            </div>
+                                            <img src="https://ui-avatars.com/api/?name=Rian&background=random"
+                                                class="profile-img" alt="User">
+                                        </div>
+                                        <p class="testimonial-text">
+                                            "Deadline besok pagi, tapi logika program masih bingung. untung nemu Joki
+                                            Kilat!, harga ramah kantong mahasiswa, pengerjaan cuma beberapa jam,
+                                            Penyelamat hidup banget!"
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-md-6 px-4">
+                                    <div class="testimonial-card">
+                                        <div class="testimonial-header">
+                                            <div>
+                                                <div class="testimonial-name">Siska</div>
+                                                <div class="stars">★★★★☆</div>
+                                            </div>
+                                            <img src="https://ui-avatars.com/api/?name=Siska&background=random"
+                                                class="profile-img" alt="User">
+                                        </div>
+                                        <p class="testimonial-text">
+                                            "Aplikasi nya kerennn, dengan harga kantong pelajar bisa dapat aplikasi se
+                                            keren ini, akhirnya sekalian nambah dibantu untuk pembuatan laporan dan
+                                            flowchart hehe."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testiCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testiCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End of testimoni -->
+
+        <!-- CTA Yuk Pesan -->
+        <div class="p-5 mb-4 bg-body-tertiary rounded-3 mt-5 hero-grid-gradient">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Masih Mau Cari yang Lebih Murah?</h1>
+                <p class="col-md-8 fs-4">
+                    Jangan risikonya akun/tugasmu di tangan yang salah. Di sini kamu dapet kualitas pro, garansi revisi,
+                    dan harga yang nggak bikin dompet nangis. Yuk, Pesan sekarang!
+                </p>
+                <button type="button" class="btn btn-lg btn-gradient-custom">
+                    Pesan Sekarang
+                </button>
+            </div>
+        </div>
+        <!-- End of CTA Yuk Pesan -->
+
+        <!-- FAQ -->
+        <div class="container mt-5">
+            <div class=" row">
+                <div class="col-12 col-md-6">
+                    <h2>Ada Pertanyaan Sebelum Order?</h2>
+                    <p>Tenang, kamu nggak sendirian. Kami sudah merangkum pertanyaan yang paling sering ditanyakan klien
+                        seputar keamanan kode, privasi, dan sistem pembayaran kami yang transparan.</p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Apakah bisa refund ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Proyek yang sudah disepakati (DP) tidak dapat di-refund.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Bagaimana jika ada bug atau revisi setelah selesai?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Proyek sudah dikirim tapi ada yang kurang? Tenang! Ada garansi 3 hari untuk
+                                    perbaikan
+                                    bug atau fitur yang melenceng dari kesepakatan. Kami juga berikan jatah 10x revisi
+                                    minor
+                                    supaya hasilnya benar-benar sesuai keinginan Anda!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                                    Apakah privasi dan data saya aman?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Keamanan data adalah prioritas kami. Semua file dan informasi proyek hanya digunakan
+                                    untuk kepentingan pengerjaan. Setelah proyek selesai dan dikonfirmasi, data akan
+                                    kami
+                                    arsipkan secara aman.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 mb-3 shadow-sm">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                                    Bagaimana sistem pembayarannya?
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted">
+                                    Sistem kami transparan dengan skema DP (Down Payment) 30-50% di awal dan pelunasan
+                                    setelah proyek selesai didemokan via video atau meeting singkat.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of FAQ -->
+
+        <!-- Footers -->
+        <div class="custom-footer-bg border-top">
+            <div class="container">
+                <footer class="pt-5 mt-5">
+                    <div class="row">
+                        <div class="col-6 col-md-4 mb-3">
+                            <h5>Menu</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Pesan Sekarang</a></li>
+                                <li class="nav-item mb-2"><a href="#product" class="nav-link p-0">Produk Kami</a></li>
+                                <li class="nav-item mb-2"><a href="#testimoni" class="nav-link p-0">Testimoni</a></li>
+                                <li class="nav-item mb-2"><a href="#" class="nav-link p-0">FAQ</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-6 col-md-4 mb-3">
+                            <h5>Company</h5>
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2"><a href="career.html" class="nav-link p-0">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top">
+                        <p>&copy; 2026 Joki Kilat. All rights reserved.</p>
+                        <ul class="list-unstyled d-flex">
+                            <li class="ms-3">
+                                <a class="link-dark" href="#">
+                                    <svg class="bi" width="24" height="24">
+                                        <use xlink:href="#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <!-- End Of Footers -->
+    </div>
+
+
+    <!-- Bootstrap -->
+    <script src="./assets/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
