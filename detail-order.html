@@ -84,7 +84,10 @@
 
         <!-- Form -->
         <div class="container mb-5">
-            <form action="">
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+            <form id="orderForm"
+                action="https://docs.google.com/forms/d/e/1FAIpQLSfAfexBeuTZROZEHux21MEjgR_2L-KOfkv9h_F_T3k39k6CSw/formResponse"
+                method="post" target="hidden_iframe" onsubmit="submitted=true">
                 <div class="row">
                     <!-- Form Proyek -->
                     <div class="col-12 col-md-7 py-3 py-md-5">
@@ -97,7 +100,7 @@
                                 <div class="col-sm-6">
                                     <label for="tipeProyek" class="form-label">Tipe Proyek<span
                                             class="text-danger">*</span></label>
-                                    <select class="form-select" id="tipeProyek" required>
+                                    <select class="form-select" id="tipeProyek" name="entry.540518096" required>
                                         <option value="">Tipe Proyek</option>
                                         <option>Aplikasi Sederhana</option>
                                         <option>Website</option>
@@ -111,7 +114,7 @@
                                 <!-- Deadline -->
                                 <div class="col-sm-6">
                                     <label for="deadline" class="form-label">Deadline</label>
-                                    <input type="date" class="form-control" id="deadline">
+                                    <input type="date" class="form-control" id="deadline" name="entry.2057217370">
                                     <div class="invalid-feedback">
                                         Valid last name is required.
                                     </div>
@@ -128,15 +131,15 @@
                                 <!-- Catatan File Referensi -->
                                 <div class="col-sm-6">
                                     <label for="catatanFileReferensi" class="form-label">Catatan</label>
-                                    <input type="text" class="form-control" id="catatanFileReferensi"
-                                        placeholder="Catatan Referensi" value="" />
+                                    <input type="text" name="entry.392399429" class="form-control"
+                                        id="catatanFileReferensi" placeholder="Catatan Referensi" />
                                 </div>
                                 <!-- End of Catatan File Referensi -->
 
                                 <!-- Budget -->
                                 <div class="col-sm-12">
                                     <label for="budgetKamu" class="form-label">Kira Kira Budget Kamu Berapa?</label>
-                                    <input type="number" class="form-control" id="budgetKamu"
+                                    <input type="number" name="entry.1839236866" class="form-control" id="budgetKamu"
                                         placeholder="Masukkan Budget (Opsional)" />
                                 </div>
                                 <!-- End of Budget -->
@@ -145,8 +148,8 @@
                                 <div class="col-sm-12">
                                     <label for="deskripsiProyek" class="form-label">Deskripsi Proyek<span
                                             class="text-danger">*</span></label>
-                                    <textarea class="form-control" id="deskripsiProyek" placeholder="Deskripsi Proyek"
-                                        rows="3" maxlength="500"></textarea>
+                                    <textarea class="form-control" name="entry.200791311" id="deskripsiProyek"
+                                        placeholder="Deskripsi Proyek" rows="3" maxlength="500" required></textarea>
                                 </div>
                                 <!-- End of Deskripsi Proyek -->
                             </div>
@@ -162,33 +165,33 @@
                                 <div class="col-sm-12">
                                     <label for="namaKamu" class="form-label">Nama Kamu<span
                                             class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" name="" id="namaKamu"
+                                    <input type="text" class="form-control" name="entry.1640093806" id="namaKamu"
                                         placeholder="Nama Kakak Cantik/Ganteng" required>
                                 </div>
                                 <!-- End of Nama Lengkap -->
 
                                 <!-- Kontak -->
                                 <div class="col-sm-12">
-                                    <label for="kontak" class="form-label">Kamu Mau Dihubungi Lewat Apa?<span
+                                    <label for="kontak" class="form-label">No WhatsApp kamu untuk kita hubungi?<span
                                             class="text-danger">*</span></label>
-                                    <div class="row mb-2">
+                                    <!-- <div class="row mb-2">
                                         <div class="btn-group">
                                             <div class="btn btn btn-glass-gradient active" id="kontakEmail">Email</div>
                                             <div class="btn btn btn-glass-gradient" id="kontakPhone">Phone</div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <input type="hidden" name="" id="kontakType" value="email">
-                                    <div class="d-block" id="email">
+                                    <!-- <div class="d-block" id="email">
                                         <div class="input-group">
                                             <input type="email" class="form-control" name="email" id="kontak"
                                                 placeholder="Masukkan email kamu" autocomplete="off">
                                         </div>
-                                    </div>
-                                    <div class="d-none" id="phoneInput">
+                                    </div> -->
+                                    <div class="d-block" id="phoneInput">
                                         <div class="input-group">
                                             <span class="input-group-text" id="basic-addon1">+62</span>
-                                            <input type="number" class="form-control" name="number"
-                                                placeholder="Masukkan No Hp : 8XXXYYYYZZZZ">
+                                            <input type="number" class="form-control" name="entry.535467737"
+                                                placeholder="Masukkan No Hp : 8XXXYYYYZZZZ" required>
                                         </div>
                                     </div>
                                 </div>
@@ -198,10 +201,10 @@
                                 <div class="col-sm-12">
                                     <label for="whereDidYouKnow" class="form-label">Darimana kamu tahu Joki
                                         Kilat?<span class="text-danger">*</span></label>
-                                    <select class="form-select" id="whereDidYouKnow" required>
+                                    <select class="form-select" id="whereDidYouKnow" name="entry.2062494936" required>
                                         <option value="">Pilih Jawaban</option>
                                         <option>Mencari Lewat Instagram</option>
-                                        <option>Instagram (Akun Resmi Joki Proyek)</option>
+                                        <option>Instagram (Akun Resmi Joki Kilat)</option>
                                         <option>Instagram (Beranda/Explore)</option>
                                         <option>Pelanggan Lama</option>
                                         <option>Disarankan Teman</option>
@@ -215,7 +218,7 @@
                                 <!-- Referral -->
                                 <div class="col-sm-12">
                                     <label for="kodeReferal" class="form-label">Kode Referal</label>
-                                    <input type="text" class="form-control" name="" id="kodeReferal"
+                                    <input type="text" class="form-control" name="entry.1716331045" id="kodeReferal"
                                         placeholder="Kode Referal">
                                 </div>
                                 <!-- End of Referral -->
@@ -225,7 +228,7 @@
                     <!-- End of Form Data Diri -->
                 </div>
                 <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-lg btn-gradient-custom">
+                    <button type="submit" class="btn btn-lg btn-gradient-custom">
                         Pesan Sekarang
                     </button>
                 </div>
@@ -279,10 +282,62 @@
     </div>
 
 
+    <!-- Thanks Modal -->
+    <div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true"
+        data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="thanksModalLabel">Pesanan Terkirim! 🚀</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Terima kasih sudah mengisi form. Untuk mempercepat proses pengerjaan, silakan konfirmasi pesanan
+                        kamu via WhatsApp.</p>
+                </div>
+                <div class="modal-footer border-0 justify-content-center">
+                    <a href="#" id="waLink" target="_blank" class="btn btn-success btn-lg w-100">
+                        Konfirmasi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Thanks Modal -->
+
+
     <!-- Bootstrap -->
     <script src="./assets/dist/js/bootstrap.min.js"></script>
     <!-- Main JS -->
     <script src="./assets/dist/script.js"></script>
+    <script type="text/javascript">
+        var submitted = false;
+
+        // Fungsi untuk menghandle saat iframe selesai load (setelah submit)
+        document.getElementById('hidden_iframe').onload = function () {
+            if (submitted) {
+                // Ambil data dari form
+                const tipeProyek = document.getElementById('tipeProyek').value;
+                const deskripsi = document.getElementById('deskripsiProyek').value;
+                const phone = "6281333436513";
+
+                // Buat pesan WhatsApp
+                const message = `Halo Joki Kilat, Saya ingin membuat ${tipeProyek}. ${deskripsi}.`;
+                const encodedMessage = encodeURIComponent(message);
+                const waUrl = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+                // Update link di tombol modal
+                document.getElementById('waLink').href = waUrl;
+
+                // Tampilkan Modal
+                var myModal = new bootstrap.Modal(document.getElementById('thanksModal'));
+                myModal.show();
+
+                // Reset status
+                submitted = false;
+            }
+        };
+    </script>
 </body>
 
 </html>
